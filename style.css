@@ -40,24 +40,37 @@ body.dark {
   background: linear-gradient(to bottom, #ede9fe, #ffffff);
 }
 
+body.dark .hero {
+  background: linear-gradient(to bottom, #2c1a4f, #1c1c1c);
+}
+
 .profile {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   border: 3px solid var(--primary);
+  object-fit: cover;
 }
 
 .hero h1 {
   font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 1.2;
+  color: inherit;
+  text-align: center;
+  word-break: break-word;
 }
 
-.hero span {
+.hero h1 span {
   color: var(--primary);
+  white-space: nowrap;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin: 10px 0;
+  color: inherit;
 }
 
 .socials a {
@@ -75,6 +88,7 @@ body.dark {
   border-radius: 16px;
   padding: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .card h2 {
@@ -129,4 +143,29 @@ footer {
   padding: 30px;
   color: #666;
   font-size: 0.9rem;
+}
+
+/* Responsive Fixes for Mobile */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .profile {
+    width: 100px;
+    height: 100px;
+  }
+
+  .socials a {
+    font-size: 0.95rem;
+  }
 }
