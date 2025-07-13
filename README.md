@@ -26,21 +26,15 @@ This is my personal portfolio website built using **HTML**, **CSS**, and **JavaS
 
 ---
 
-## 📸 Preview
-
-![Hero Screenshot](assets/profile.jpg)
-
----
-
 ## 📂 Folder Structure
-
+```
 ├── index.html
 ├── style.css
 ├── script.js
 └── assets/
 ├── profile.jpg
 └── resume.pdf
-
+```
 ---
 
 ## 🚀 Deployment
